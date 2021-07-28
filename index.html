@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.js"></script>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    
+    <!--Heading-->
+    <h1 align="center">TODO LIST</h1>
+
+    <!--Elements-->
+
+    <div class="row">
+
+        <!--Input Box-->
+
+        <div class="col">
+            <div class="form">
+                <label for="inpNewTask">New Task</label>
+                <input type="text" id="inpNewTask" placeholder="Enter the name of the task">
+                <small id="newTaskHelp">A short one line description of your task</small>
+            </div>
+        </div>
+
+        <!--Buttons-->
+
+        <div class="col btn-align">
+            <button type="button" class="btn" id="btnAdd" disabled>
+                <i class="fas fa-plus-square"></i> Add 
+            </button>
+            <button class="btn" id="btnReset" disabled>
+                <i class="fas fa-backspace"></i> Reset
+            </button>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col"></div>
+
+        <div class="col">
+            <button class="btn" id="btnSort" disabled>
+                <i class="fas fa-sort-amount-down"></i> Sort
+            </button>
+            <button class="btn" id="btnCleanUp" disabled>
+                <i class="fas fa-trash-alt"></i> Clean Up
+            </button>
+        </div>
+    </div>
+
+    <!--Tasks Lists-->
+    <ul id="ulTasks">
+    </ul>
+
+    <button class="btn" id="btnShowHide" disabled>Hide</button>
+
+</body>
+</html>
